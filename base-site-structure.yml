@@ -1,0 +1,130 @@
+# This file contains the base site structure 
+# for my quarto websites and lives at
+# _theme/base-site-structure.yml
+# in other repositories that import this
+# repo as a submodule.
+
+favicon: _theme/assets/favicon.png
+
+format:
+  html:
+    respect-user-color-scheme: true
+    theme:
+      light:
+        - cosmo
+        - brand
+        - _theme/styles.scss
+      dark: 
+        - slate
+        - brand
+        - _theme/styles.scss
+    html-math-method: mathjax
+
+execute:
+  enabled: true
+  freeze: auto
+
+navbar:
+  right:
+    - text: About
+      href: https://matthewheun.com/about
+    - text: Awards
+      href: https://matthewheun.com/awards
+    - text: Publications
+      href: https://matthewheun.com/works/publications
+    - text: Presentations
+      href: https://matthewheun.com/works/presentations
+    - text: Posts
+      href: https://matthewheun.com/posts
+    - text: Retired blogs
+      href: https://matthewheun.com/retired_blogs/
+    - text: CV
+      href: https://matthewheun.com/files/Heun_CV.pdf
+
+# Icons from SVG Repo (https://www.svgrepo.com)
+page-footer: 
+  center: 
+    - text: |
+        ::: {.light-content}
+          <img src="/_theme/assets/icons/orcid-light.svg"
+            alt="ORCID iD"
+            class="footer-icons">
+        :::
+        ::: {.dark-content}
+          <img src="/_theme/assets/icons/orcid-dark.svg"
+            alt="ORCID iD"
+            class="footer-icons">
+        :::
+      href: https://orcid.org/0000-0002-7438-214X
+    - text: |
+        ::: {.light-content}
+          <img src="/_theme/assets/icons/linkedin-light.svg"
+            alt="LinkedIn"
+            class="footer-icons">
+        :::
+        ::: {.dark-content}
+          <img src="/_theme/assets/icons/linkedin-dark.svg"
+            alt="LinkedIn"
+            class="footer-icons">
+        :::
+      href: https://www.linkedin.com/in/matthew-heun-58870665
+    - text: |
+        ::: {.light-content}
+          <img src="/_theme/assets/icons/github-light.svg"
+            alt="GitHub"
+            class="footer-icons">
+        :::
+        ::: {.dark-content}
+          <img src="/_theme/assets/icons/github-dark.svg"
+            alt="GitHub"
+            class="footer-icons">
+        :::
+      href: https://www.github.com/matthewheun
+    - text: |
+        ::: {.light-content}
+          <img src="/_theme/assets/icons/googlescholar-light.svg"
+            alt="Google Scholar"
+            class="footer-icons">
+        :::
+        ::: {.dark-content}
+          <img src="/_theme/assets/icons/googlescholar-dark.svg"
+            alt="Google Scholar"
+            class="footer-icons">
+        :::
+      href: https://scholar.google.com/citations?user=idEvbuMAAAAJ&hl=en
+    - text: |
+        ::: {.light-content}
+          <img src="/_theme/assets/icons/researchgate-light.svg"
+            alt="Research Gate"
+            class="footer-icons">
+        :::
+        ::: {.dark-content}
+          <img src="/_theme/assets/icons/researchgate-dark.svg"
+            alt="Research Gate"
+            class="footer-icons">
+        :::
+      href: https://www.researchgate.net/profile/Matthew-Heun
+    - text: |
+        ::: {.light-content}
+          <img src="/_theme/assets/icons/email-light.svg"
+            alt="Email"
+            class="footer-icons">
+        :::
+        ::: {.dark-content}
+          <img src="/_theme/assets/icons/email-dark.svg"
+            alt="Email"
+            class="footer-icons">
+        :::
+      href: mailto:matthew.heun@me.com
+    - text: |
+        ::: {.light-content}
+          <img src="/_theme/assets/icons/rss-light.svg"
+            alt="RSS feed"
+            class="footer-icons">
+        :::
+        ::: {.dark-content}
+          <img src="/_theme/assets/icons/rss-dark.svg"
+            alt="RSS feed"
+            class="footer-icons">
+        :::
+      href: feed://matthewheun.com/index.xml
