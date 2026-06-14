@@ -1,0 +1,22 @@
+# This is the common navbar for my websites,
+# including my home site and 
+# the CEC 2026 keynote book.
+# I use the R script build-quarto-yml.R
+# to inject this navbar into the _quarto.yml
+# file for each site.
+# navbar:
+    right:
+      - text: About
+        href: https://matthewheun.com/about
+      - text: Awards
+        href: https://matthewheun.com/awards
+      - text: Publications
+        href: https://matthewheun.com/works/publications
+      - text: Presentations
+        href: https://matthewheun.com/works/presentations
+      - text: Posts
+        href: https://matthewheun.com/posts
+      - text: Retired blogs
+        href: https://matthewheun.com/retired_blogs/
+      - text: CV
+        href: https://matthewheun.com/files/Heun_CV.pdf

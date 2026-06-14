@@ -1,0 +1,14 @@
+# format:
+    html:
+      respect-user-color-scheme: true
+      theme:
+        light:
+          - cosmo
+          - brand
+          - _theme/styles.scss
+        dark: 
+          - slate
+          - brand
+          - _theme/styles.scss
+      toc: true
+      html-math-method: mathjax
