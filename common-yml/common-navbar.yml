@@ -6,6 +6,8 @@
 # file for each site.
 # navbar:
     right:
+      - text: CEC keynote
+        href: https://cec2026keynote.matthewheun.com
       - text: About
         href: https://matthewheun.com/about
       - text: Awards
