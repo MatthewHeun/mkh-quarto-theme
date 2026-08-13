@@ -26,29 +26,29 @@
 #'                        Default is `file.path("_quarto.yml")`.
 #' @param favicon_path The path to a file containing
 #'                     favicon code for the _quarto.yml file.
-#'                     Default is `file.path("_theme", "common-yml", "common-favicon.yml")`.
+#'                     Default is `file.path("_theme", "assets", "default-quarto-yml", "default-favicon.yml")`.
 #' @param navbar_path The path to a file containing
 #'                    navbar code for the _quarto.yml file.
-#'                    Default is `file.path("_theme", "common-yml", "common-navbar.yml")`.
+#'                    Default is `file.path("_theme", "assets", "default-quarto-yml", "default-navbar.yml")`.
 #' @param page_footer_path The path to a file containing
 #'                         page-footer code for the _quarto.yml file.
-#'                         Default is `file.path("_theme", "common-yml", "common-page-footer.yml")`.
+#'                         Default is `file.path("_theme", "assets", "default-quarto-yml", "default-page-footer.yml")`.
 #' @param format_path The path to a file containing
 #'                    format code for the _quarto.yml file.
-#'                    Default is `file.path("_theme", "common-yml", "common-format.yml")`.
+#'                    Default is `file.path("_theme", "assets", "default-quarto-yml", "default-format.yml")`.
 #' @param execute_path The path to a file containing
 #'                     execute code for the _quarto.yml file.
-#'                     Default is `file.path("_theme", "common-yml", "common-execute.yml")`.
+#'                     Default is `file.path("_theme", "assets", "default-quarto-yml", "default-execute.yml")`.
 #'
 #' @returns Nothing. This function should be called for its
 #'          side effect of writing the _quarto.yml file.
 write_quarto_yml <- function(base_quarto_yml_path,
                              output_yml_path = file.path("_quarto.yml"),
-                             favicon_path = file.path("_theme", "common-yml", "common-favicon.yml"), 
-                             navbar_path = file.path("_theme", "common-yml", "common-navbar.yml"), 
-                             page_footer_path = file.path("_theme", "common-yml", "common-page-footer.yml"), 
-                             format_path = file.path("_theme", "common-yml", "common-format.yml"), 
-                             execute_path = file.path("_theme", "common-yml", "common-execute.yml")) {
+                             favicon_path = file.path("_theme", "assets", "default-quarto-yml", "default-favicon.yml"), 
+                             navbar_path = file.path("_theme", "assets", "default-quarto-yml", "default-navbar.yml"), 
+                             page_footer_path = file.path("_theme", "assets", "default-quarto-yml", "default-page-footer.yml"), 
+                             format_path = file.path("_theme", "assets", "default-quarto-yml", "default-format.yml"), 
+                             execute_path = file.path("_theme", "assets", "default-quarto-yml", "default-execute.yml")) {
 
   base_quarto_yml <- yaml::yaml.load_file(base_quarto_yml_path)
   favicon_yml <- yaml::yaml.load_file(favicon_path)
